@@ -120,7 +120,7 @@ dl dd {
 
 blockquote, q {
   border-left: 4px solid #DDD;
-  padding: 0 1em;
+  padding: 0 0.5em 0 1em;
   color: #777;
   quotes: none;
 }
@@ -146,19 +146,21 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 h5 {
   font-size: 1em;
+  color: #777;
 }
 
 h6 {
   font-size: 1em;
+  font-weight: normal;
   color: #777;
 }
 
@@ -199,4 +201,12 @@ table tr th, table tr td {
 table tr th {
  font-weight: bold;
   background-color: #F0F0F0;
+}
+
+hr {
+  display: block;
+  margin: 1.2em 0 !important;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
 }
