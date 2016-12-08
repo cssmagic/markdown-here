@@ -78,7 +78,7 @@ ul, ol {
 }
 
 li {
-  margin: 0.5em 0;
+  margin: 0.25em 0;
 }
 
 /* Space paragraphs in a list the same as the list itself. */
@@ -209,4 +209,53 @@ hr {
   height: 1px;
   background-color: #ccc;
   border: none;
+}
+
+/* remove margin of edge side of edge elements */
+.markdown-here-wrapper > blockquote:first-child,
+.markdown-here-wrapper > blockquote:first-child >    h1:first-child,
+.markdown-here-wrapper > blockquote:first-child >    h2:first-child,
+.markdown-here-wrapper > blockquote:first-child >    h3:first-child,
+.markdown-here-wrapper > blockquote:first-child >    h4:first-child,
+.markdown-here-wrapper > blockquote:first-child > table:first-child,
+.markdown-here-wrapper > blockquote:first-child >   pre:first-child,
+.markdown-here-wrapper > blockquote:first-child >    ul:first-child,
+.markdown-here-wrapper > blockquote:first-child >    ol:first-child,
+.markdown-here-wrapper > blockquote:first-child >    ul:first-child > p:first-child,
+.markdown-here-wrapper > blockquote:first-child >    ol:first-child > p:first-child,
+.markdown-here-wrapper > blockquote:first-child >     p:first-child,
+.markdown-here-wrapper >         h1:first-child,
+.markdown-here-wrapper >         h2:first-child,
+.markdown-here-wrapper >         h3:first-child,
+.markdown-here-wrapper >         h4:first-child,
+.markdown-here-wrapper >      table:first-child,
+.markdown-here-wrapper >        pre:first-child,
+.markdown-here-wrapper >         ul:first-child,
+.markdown-here-wrapper >         ol:first-child,
+.markdown-here-wrapper >         ul:first-child > p:first-child,
+.markdown-here-wrapper >         ol:first-child > p:first-child,
+.markdown-here-wrapper >          p:first-child {
+	margin-top: 0 !important;
+}
+.markdown-here-wrapper > blockquote:nth-last-child(2),
+.markdown-here-wrapper > blockquote:nth-last-child(2) > table:last-child,
+.markdown-here-wrapper > blockquote:nth-last-child(2) >   pre:last-child,
+.markdown-here-wrapper > blockquote:nth-last-child(2) >    ul:last-child,
+.markdown-here-wrapper > blockquote:nth-last-child(2) >    ol:last-child,
+.markdown-here-wrapper > blockquote:nth-last-child(2) >    ul:last-child > p:last-child,
+.markdown-here-wrapper > blockquote:nth-last-child(2) >    ol:last-child > p:last-child,
+.markdown-here-wrapper > blockquote:nth-last-child(2) >     p:last-child,
+.markdown-here-wrapper >      table:nth-last-child(2),
+.markdown-here-wrapper >        pre:nth-last-child(2),
+.markdown-here-wrapper >         ul:nth-last-child(2),
+.markdown-here-wrapper >         ol:nth-last-child(2),
+.markdown-here-wrapper >         ul:nth-last-child(2) > p:last-child,
+.markdown-here-wrapper >         ol:nth-last-child(2) > p:last-child,
+.markdown-here-wrapper >          p:nth-last-child(2) {
+	margin-bottom: 0 !important;
+}
+
+/* hide this holder div */
+.markdown-here-wrapper > div[title]:last-child {
+	display: none;
 }
