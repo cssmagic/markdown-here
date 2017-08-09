@@ -20,7 +20,7 @@
 
 pre, code {
   font-size: 0.85em;
-  font-family: Consolas, Inconsolata, Courier, monospace;
+  font-family: Menlo, Consolas, Courier, monospace;
 }
 
 code {
@@ -195,7 +195,7 @@ table tr th, table tr td {
   font-size: 1em;
   border: 1px solid #CCC;
   margin: 0;
-  padding: 0.5em 1em;
+  padding: 0.5em;
 }
 
 table tr th {
@@ -258,4 +258,16 @@ hr {
 /* hide this holder div */
 .markdown-here-wrapper > div[title]:last-child {
 	display: none;
+}
+
+/* wechat link */
+a:not([href^='http://mp.weixin.qq.com/']):not([href^='https://mp.weixin.qq.com/']) {
+	color: inherit;
+}
+a[href^='http://mp.weixin.qq.com/'],
+a[href^='https://mp.weixin.qq.com/'] {
+	text-decoration: underline;
+}
+table a {
+	text-decoration: none !important;
 }
