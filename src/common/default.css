@@ -262,7 +262,7 @@ hr {
 
 /* wechat link */
 a:not([href^='http://mp.weixin.qq.com/']):not([href^='https://mp.weixin.qq.com/']) {
-	color: inherit;
+	color: #37577c;
 }
 a[href^='http://mp.weixin.qq.com/'],
 a[href^='https://mp.weixin.qq.com/'] {
