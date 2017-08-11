@@ -271,3 +271,9 @@ a[href^='https://mp.weixin.qq.com/'] {
 table a {
 	text-decoration: none !important;
 }
+
+/* due to wechat remove inline style of ul, ol*/
+ul + p,
+ol + p {
+	margin-top: 1.2em !important;
+}
